@@ -47,14 +47,33 @@
   
   .hero__container {
     width: 100%;
+    position: relative;
   }
   .hero__image__container {
     width: 100%;
+    position: relative;
   }
   
   .hero__image {
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    top: 45px;
+    right: 2rem;
   }
+
+  .hero__image__bg {
+    position: relative;
+    z-index: -3;
+    width: 90%;
+    bottom: 5px;
+    left: 37px;
+  }
+
+  .hero__description {
+    text-align: center;
+  }
+
+  
   
   .hero__text {
     font-size: 30px;
@@ -134,6 +153,48 @@
     width: 120%;
     height: 200px;
   }
+
+  .stay__Updated {
+    padding: 20px;
+  }
+
+  .update__form {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .update__email {
+    width: 180px;
+    height: 25px;
+    position: relative;
+    top: 8px;
+    border: 2px solid #f7866f ;
+    box-shadow:0 0 15px 4px rgba(216, 76, 122, 0.06);
+    border-radius:7px;
+    background-color: #faced9;
+  }
+
+  .quote {
+    
+    width: 100%;
+    padding: 25px 2px;
+    position: relative;
+  }
+
+  .quote__image {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -3;
+  }
+
+  .quote__text {
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    text-align: center;
+    top: 62px;
+  }
   
   @media (min-width: 768px) {
     .navbar {
@@ -154,6 +215,11 @@
       justify-content: space-between;
       gap: 10px;
     }
+    
+    .hero__description {
+      text-align: unset;
+    }
+  
   
     .explore__menu__container {
       position: relative;
@@ -219,6 +285,26 @@
   
     .restaurants__container{
       margin-top: 30px;
+    }
+
+    .hero__image__container {
+      width: 100%;
+      position: relative;
+    }
+    
+    .hero__image {
+      width: 80%;
+      position: absolute;
+      top: 80px;
+      right: 1px;
+    }
+  
+    .hero__image__bg {
+      position: relative;
+      z-index: -3;
+      width: 90%;
+      bottom: 5px;
+      left: 130px;
     }
   }
   
